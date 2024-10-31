@@ -1,0 +1,9 @@
+@mixin styles{
+    border: 0;
+    outline: none;
+}
+
+@mixin flexStyle{
+    display: flex;
+    align-items: center;
+}
