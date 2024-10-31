@@ -20,15 +20,6 @@ function createPassword(){
         password += allChars[Math.floor(Math.random()*allChars.length)];
     }
     passwordField.value = password;
-    if(password.length < 12 || !/[A-Z]/.test(password) || !/[a-z]/.test(password) || !/[0-9]/.test(password) || !/[@#$%^*[\]+<>-=~]/.test(password)){
-        errorResult.textContent = "Password must be minimum 12 characters, symbols, numbers";
-        errorResult.style.display = "block";
-        positiveResult.style.display = "none";
-        } else {
-        positiveResult.textContent = "Everything is okei."
-        positiveResult.style.display = "block";
-        errorResult.style.display = "none";
-        }
 }
 
 async function copyPassword() {
